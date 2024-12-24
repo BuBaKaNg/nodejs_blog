@@ -36,9 +36,7 @@ app.engine(
         extname: '.hbs',
     }),
 );
-        app.set('view engine',
-    
-    'hbs');
+app.set('   view engine', 'hbs');
 app.set('views', path.join(__dirname, '\\resource\\views'));
 
 //Routes init
@@ -46,6 +44,6 @@ route(app);
 
 // App chạy từ express và lắng nghe trên cổng 3000
 //127.0.0.1 - localhost
-app.listen(port, () => {
+        app.listen(port, () => {
     console.log(`Example app listening on port http://localhost:${port}`);
 });
