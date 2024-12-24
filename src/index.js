@@ -27,7 +27,7 @@ app.use(express.json());
 
 //Run ở cổng nào
 
-app.use(morgan('combined'));
+app.use(morgan(' combined'));
 console.log(path.join(__dirname, 'public'));
 
 app.engine(
@@ -36,7 +36,9 @@ app.engine(
         extname: '.hbs',
     }),
 );
-app.set('view engine', 'hbs');
+        app.set('view engine',
+    
+    'hbs');
 app.set('views', path.join(__dirname, '\\resource\\views'));
 
 //Routes init
